@@ -17,7 +17,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
-  console.log(console.log(process.env.PATH))
+  //console.log(console.log(process.env.PATH))
+  res.json(process.env.PATH)
 })
 
 app.listen(port);
